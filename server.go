@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/julienschmidt/httprouter"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
@@ -35,7 +34,7 @@ func (server Server) Start() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("server running on: %v\n", server.address)
+	log.Printf("server running on: %v\n", server.address)
 	err = http.Serve(listener, router)
 	if err != nil {
 		log.Fatal(err)
