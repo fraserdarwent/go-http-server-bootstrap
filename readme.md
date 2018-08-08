@@ -4,7 +4,7 @@ Read variables from ENV or command line arguments
 
 Usage
 
-`git clone https://github.com/fraserdarwent/go-http-server-bootstrap.git <PROJECT_NAME>`
+`git clone https://github.com/fraserdarwent/go-http-server-bootstrap.git  $GOPATH/src/<PROJECT_NAME>`
 
 `go test .`
 
