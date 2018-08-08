@@ -29,7 +29,6 @@ func main() {
 }
 
 func (server Server) Start() {
-	fmt.Println("Starting")
 	router := httprouter.New()
 	router.GET("/health", GetHealth)
 	listener, err := net.Listen("tcp", server.address)
